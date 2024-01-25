@@ -1,1 +1,2 @@
-export * from './lib/voice';
+export * from './lib/hook/rtc';
+// export * from './lib/voice';

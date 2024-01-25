@@ -36,4 +36,10 @@ We are using nx to build a modular front-end. The idea is that you'll be able to
 To do that : 
 ```bash
 npx nx g @nx/react:library --name=voice --unitTestRunner=vitest --directory=libs
+```    
+
+To create a component / a hook with nx :
+```bash
+npx nx g @nx/react:component --directory=<path> <component-name> # creates a component
+npx nx g @nx/react:hook --directory=<path> <component-name> # creates a hook
 ```
