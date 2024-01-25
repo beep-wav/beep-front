@@ -31,3 +31,9 @@ npm start
 }
 ```
 Basically, it will format your code according to the `.prettierrc` file ! Btw, you are free to tweak your settings but don't edit the `.prettierrc` file without preventing the other members of the team :)
+## How to use nx ??
+We are using nx to build a modular front-end. The idea is that you'll be able to import our components anywhere and it should work !
+To do that : 
+```bash
+npx nx g @nx/react:library --name=voice --unitTestRunner=vitest --directory=libs
+```
