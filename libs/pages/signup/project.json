@@ -1,7 +1,7 @@
 {
-  "name": "pages",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/pages/src",
+  "name": "pages-signup",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/pages/signup/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -18,7 +18,7 @@
       ],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/libs/pages"
+        "outputPath": "dist/libs/pages/signup"
       },
       "configurations": {
         "development": {
@@ -35,7 +35,7 @@
         "{options.reportsDirectory}"
       ],
       "options": {
-        "reportsDirectory": "../../coverage/libs/pages"
+        "reportsDirectory": "../../../coverage/libs/pages/signup"
       }
     }
   }

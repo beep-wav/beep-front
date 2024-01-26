@@ -21,6 +21,15 @@
       "@beep-front/pages": [
         "libs/pages/src/index.ts"
       ],
+      "@beep-front/pages/login": [
+        "libs/pages/login/src/index.ts"
+      ],
+      "@beep-front/pages/signin": [
+        "libs/pages/signin/src/index.ts"
+      ],
+      "@beep-front/pages/signup": [
+        "libs/pages/signup/src/index.ts"
+      ],
       "@beep-front/shared/ui": [
         "libs/shared/ui/src/index.ts"
       ],

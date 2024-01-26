@@ -8,7 +8,7 @@ import * as path from 'path';
       
       export default defineConfig({
         root: __dirname,
-        cacheDir: '../../node_modules/.vite/libs/pages',
+        cacheDir: '../../../node_modules/.vite/libs/pages/login',
         
         
         
@@ -24,7 +24,7 @@ dts({ entryRoot: 'src', tsConfigFilePath: path.join(__dirname, 'tsconfig.lib.jso
       // Configuration for building your library.
       // See: https://vitejs.dev/guide/build.html#library-mode
       build: {
-        outDir: '../../dist/libs/pages',
+        outDir: '../../../dist/libs/pages/login',
         reportCompressedSize: true,
         commonjsOptions: {
           transformMixedEsModules: true,
@@ -32,7 +32,7 @@ dts({ entryRoot: 'src', tsConfigFilePath: path.join(__dirname, 'tsconfig.lib.jso
         lib: {
           // Could also be a dictionary or array of multiple entry points.
           entry: 'src/index.ts',
-          name: 'pages',
+          name: 'pages-login',
           fileName: 'index',
           // Change this to the formats you want to support.
           // Don't forget to update your package.json as well.
@@ -47,14 +47,14 @@ dts({ entryRoot: 'src', tsConfigFilePath: path.join(__dirname, 'tsconfig.lib.jso
         test: {
     globals: true,
     cache: {
-      dir: '../../node_modules/.vitest'
+      dir: '../../../node_modules/.vitest'
     },
     environment: 'jsdom',
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     
     reporters: ['default'],
     coverage: {
-      reportsDirectory: '../../coverage/libs/pages',
+      reportsDirectory: '../../../coverage/libs/pages/login',
       provider: 'v8',
     }
   },
