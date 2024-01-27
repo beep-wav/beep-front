@@ -1,12 +1,12 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
-// import {PagesLogin} from '@beep-front/pages/login';
-import {PagesSignup} from '@beep-front/pages/signup';
 
 export function App() {
   return (
     <div>
-      <PagesSignup /> 
+      <h1 className="text-4xl text-purple-500 font-bold">
+        Hello world !
+      </h1>
     </div>
   );
 }
