@@ -4,8 +4,8 @@
 
 
   import styles from './shared-ui.module.scss';
-  
 
+  
 /* eslint-disable-next-line */
 export interface SharedUiProps {
 }
