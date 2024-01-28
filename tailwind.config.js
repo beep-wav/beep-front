@@ -11,7 +11,11 @@ module.exports = {
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        cloud: 'url("/src/assets/background.svg")',
+      },
+    },
   },
   plugins: [],
 };
