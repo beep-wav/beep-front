@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback } from 'react';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface UseRtc {
@@ -9,18 +9,21 @@ export interface UseRtc {
 
 export function useRtc(): UseRtc {
   const [mediaStream, setMediaStream] = useState<MediaStream | null>(null);
-  
+
   return {
     mediaStream,
     enable: useCallback(async () => {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const stream = await navigator.mediaDevices.getUserMedia({
+        audio: true,
+        video: true,
+      });
       setMediaStream(stream);
     }, []),
     disable: useCallback(() => {
-      mediaStream?.getTracks().forEach(track => track.stop());
+      mediaStream?.getTracks().forEach((track) => track.stop());
       setMediaStream(null);
     }, [mediaStream]),
   };
-};
+}
 
 export default useRtc;
