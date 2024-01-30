@@ -1,8 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import styles from './app.module.scss';
 import Login from './../pages/Login';
 import Signup from './../pages/Signup';
+import Error from './../pages/Error';
 
 export function App() {
   return (
@@ -10,7 +10,7 @@ export function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="*" element={<div>404</div>} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
