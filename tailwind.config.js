@@ -15,6 +15,9 @@ module.exports = {
       backgroundImage: {
         cloud: 'url("/src/assets/background.svg")',
       },
+      transitionProperty: {
+        'rounded': 'border-radius',
+      },
     },
   },
   plugins: [],
