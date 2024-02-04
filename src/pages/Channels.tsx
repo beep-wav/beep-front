@@ -82,6 +82,9 @@ const actualChannel = {
 export default function Channels(props: ChannelsProps) {
     return (
         <div className="flex flex-row bg-violet-500">
+            <div className="bg-violet-300 p-6 flex flex-col gap-2">
+
+            </div>
             <div className="bg-violet-200 p-6">
                 <MessagesHeader channel={actualChannel.name} />
                 <div className="flex flex-col gap-3 font-medium">
